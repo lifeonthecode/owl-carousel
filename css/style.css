@@ -1,0 +1,75 @@
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+
+
+.item {
+    padding: 20px;
+    background: beige;
+    text-align: center;
+}
+
+.owl-stage-outer {
+    position: relative;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 47%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-nav button {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid black !important;
+    transition: all .3s ease;
+}
+.owl-nav button:hover {
+    border: 2px solid crimson !important;
+}
+
+.owl-nav button.owl-prev {
+    margin-left: -50px;
+}
+.owl-nav button.owl-next {
+    margin-right: -50px;
+}
+
+
+
+
+.owl-dots {
+    position: relative;
+    width: 50px;
+    height: auto;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+
+}
+
+.owl-dots .owl-dot span  {
+    width: 10px;
+    height: 10px;
+    
+    display: block;
+    margin-right: 15px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.owl-dots .owl-dot.active span{
+    border: 2px solid red;
+    border-radius: 100%;
+}
